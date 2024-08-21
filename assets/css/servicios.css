@@ -1,0 +1,114 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fbfbfb;
+  margin: 0;
+  padding: 0;
+}
+
+.headers {
+  background-color: #ffffff;
+  color: rgb(254, 254, 254);
+  padding: 0;
+  text-align: center;
+  background-image: url('assets/img/IMAGEN_DE_ARRIBA_SERVICIOS.png');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.header h1, .header p {
+  margin: 0;
+  padding: 150px;
+  color: white;
+}
+
+.container {
+  padding: 0;
+}
+
+.content {
+  background-color: #3B4D71;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  animation: slideIn 1s ease-out;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  border-radius: 12px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.service img {
+  width: auto;
+  max-width: 25%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.service:hover img {
+  transform: scale(1.05);
+}
+
+.service .text {
+  width: 55%;
+  padding: 20px;
+}
+
+.service:nth-child(odd) {
+  background-color: #EAEAEA;
+}
+
+.service:nth-child(even) {
+  background-color: #D3D3D3;
+}
+
+.service.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-cuadro {
+  border: 2px solid #b9b4b4;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.service img.limpieza-img {
+  max-width: 55%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
